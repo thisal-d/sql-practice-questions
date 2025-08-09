@@ -36,9 +36,9 @@ CREATE TABLE employees (
 
    * Expected Output:
 
-     | avg\_salary |
-     | ----------- |
-     | 64500.00    |
+     | avg\_salary     |
+     | --------------- |
+     | 58375.000000    |
 
 2. Calculate the average salary of employees in the Marketing department.
 
@@ -54,7 +54,7 @@ CREATE TABLE employees (
 
      | avg\_salary |
      | ----------- |
-     | 58333.33    |
+     | 58666.666666    |
 
 4. Retrieve the department and average salary for each department (combine with `GROUP BY`).
 
@@ -73,7 +73,7 @@ CREATE TABLE employees (
 
      | avg\_salary |
      | ----------- |
-     | 54750.00    |
+     | 57333.333333    |
 
 ---
 

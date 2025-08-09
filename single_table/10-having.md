@@ -46,8 +46,8 @@ CREATE TABLE employees (
 
      | department | total\_salary |
      | ---------- | ------------- |
-     | Sales      | 156000.00     |
-     | Marketing  | 120000.00     |
+     | IT      | 140000.00     |
+     | Sales  | 156000.00     |
 
 3. Retrieve departments having average salary less than 60000.
 
@@ -64,8 +64,8 @@ CREATE TABLE employees (
 
      | department | active\_count |
      | ---------- | ------------- |
-     | Sales      | 2             |
-     | Marketing  | 2             |
+     | Marketing      | 2             |
+     | Sales  | 2             |
 
 5. Retrieve departments having average salary greater than 60000 and count of employees greater than 1.
 
@@ -73,7 +73,7 @@ CREATE TABLE employees (
 
      | department | avg\_salary | count |
      | ---------- | ----------- | ----- |
-     | Marketing  | 60000.00    | 2     |
+     | IT         | 70000.000000 | 2     |
 
 ---
 

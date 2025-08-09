@@ -96,9 +96,9 @@ CREATE TABLE employees (
 
    * Expected Output:
 
-     | avg\_salary |
-     | ----------- |
-     | 64500.00    |
+     | avg\_salary  |
+     | ------------ |
+     | 58375.000000 |
 
 ---
 

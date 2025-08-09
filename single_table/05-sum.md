@@ -38,7 +38,7 @@ CREATE TABLE employees (
 
      | total\_salary |
      | ------------- |
-     | 516000.00     |
+     | 467000.00     |
 
 2. Calculate the total salary of employees in the Sales department.
 
@@ -54,7 +54,7 @@ CREATE TABLE employees (
 
      | total\_salary |
      | ------------- |
-     | 350000.00     |
+     | 352000.00     |
 
 4. Retrieve the department and total salary of employees in each department (combine with `GROUP BY`).
 
@@ -73,7 +73,7 @@ CREATE TABLE employees (
 
      | total\_salary |
      | ------------- |
-     | 219000.00     |
+     | 344000.00     |
 
 ---
 
