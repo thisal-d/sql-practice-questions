@@ -1,6 +1,6 @@
 [⬅️ Home](README.md) | [⬅️ Previous](09-group-by.md) | [Next ➡️](11-pro.md)
 
-# 10. PRO
+# 10. HAVING
 
 ---
 
