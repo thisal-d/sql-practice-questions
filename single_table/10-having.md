@@ -1,10 +1,6 @@
-Here’s the **10. HAVING** README in the updated style:
+[⬅️ Home](README.md) | [⬅️ Previous](09-group-by.md) | [Next ➡️](11-pro.md)
 
----
-
-[⬅️ Home](README.md) | [⬅️ Previous](09-group-by.md)
-
-# 10. HAVING
+# 10. PRO
 
 ---
 
@@ -95,4 +91,4 @@ Filtering groups with `HAVING` helps refine aggregated data results!
 
 ---
 
-[⬅️ Home](README.md) | [⬅️ Previous](09-group-by.md)
+[⬅️ Home](README.md) | [⬅️ Previous](09-group-by.md) | [Next ➡️](11-pro.md)

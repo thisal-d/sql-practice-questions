@@ -1,7 +1,3 @@
-Here’s the **9. GROUP BY** README in the updated style you prefer:
-
----
-
 [⬅️ Home](README.md) | [⬅️ Previous](08-where.md) | [Next ➡️](10-having.md)
 
 # 9. GROUP BY
@@ -108,7 +104,3 @@ Grouping data is essential for summary and analysis of categorized data!
 ---
 
 [⬅️ Home](README.md) | [⬅️ Previous](08-where.md) | [Next ➡️](10-having.md)
-
----
-
-Say **"next"** when you want me to generate the README for **HAVING**!

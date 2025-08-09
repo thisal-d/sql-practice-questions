@@ -1,17 +1,6 @@
+[⬅️ Home](README.md) | [⬅️ Previous](03-order-by.md) | [Next ➡️](05-sum.md)
 
 # 4. COUNT()
-
----
-
-## Navigation
-
-[Previous: ORDER BY](03-order-by.md) | [Main README](README.md) | [Next: SUM()](05-sum.md)
-
----
-
-## Introduction
-
-This section introduces the aggregate function `COUNT()`, used to count rows or non-null values in a column. You will learn how to count total rows, count distinct values, and combine counts with conditions.
 
 ---
 
@@ -26,7 +15,7 @@ CREATE TABLE employees (
     hire_date DATE,
     is_active BOOLEAN
 );
-````
+```
 
 | id | name          | department | salary   | hire\_date | is\_active |
 | -- | ------------- | ---------- | -------- | ---------- | ---------- |
@@ -41,58 +30,50 @@ CREATE TABLE employees (
 
 ---
 
-## Practice Questions
-
-### Simple Questions (Isolated Concept)
+## Questions
 
 1. Count the total number of employees.
 
+   * Expected Output:
+
+     | count |
+     | ----- |
+     | 8     |
+
 2. Count how many employees are currently active (`is_active = TRUE`).
+
+   * Expected Output:
+
+     | count |
+     | ----- |
+     | 6     |
 
 3. Count the number of distinct departments.
 
-### Complex Questions (Combining with Earlier Concepts)
+   * Expected Output:
+
+     | count |
+     | ----- |
+     | 4     |
 
 4. Retrieve the department and count of employees in each department (combine with `GROUP BY`).
 
+   * Expected Output:
+
+     | department | count |
+     | ---------- | ----- |
+     | Sales      | 3     |
+     | Marketing  | 2     |
+     | HR         | 1     |
+     | IT         | 2     |
+
 5. Count the number of employees hired after 2018-01-01 (combine with `WHERE`).
 
----
+   * Expected Output:
 
-## Expected Outputs
-
-### Question 1
-
-| count |
-| ----- |
-| 8     |
-
-### Question 2
-
-| count |
-| ----- |
-| 6     |
-
-### Question 3
-
-| count |
-| ----- |
-| 4     |
-
-### Question 4
-
-| department | count |
-| ---------- | ----- |
-| Sales      | 3     |
-| Marketing  | 2     |
-| HR         | 1     |
-| IT         | 2     |
-
-### Question 5
-
-| count |
-| ----- |
-| 4     |
+     | count |
+     | ----- |
+     | 4     |
 
 ---
 
@@ -110,4 +91,4 @@ Try counting different subsets of data to better understand aggregate functions!
 
 ---
 
-[Previous: ORDER BY](03-order-by.md) | [Main README](README.md) | [Next: SUM()](05-sum.md)
+[⬅️ Home](README.md) | [⬅️ Previous](03-order-by.md) | [Next ➡️](05-sum.md)
