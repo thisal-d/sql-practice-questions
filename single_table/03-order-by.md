@@ -13,20 +13,20 @@ CREATE TABLE employees (
     department VARCHAR(50),
     salary DECIMAL(10,2),
     hire_date DATE,
-    is_active BOOLEAN
+    is_active BIT
 );
 ```
 
 | id | name          | department | salary   | hire\_date | is\_active |
 | -- | ------------- | ---------- | -------- | ---------- | ---------- |
-| 1  | Alice Johnson | Sales      | 55000.00 | 2018-03-15 | TRUE       |
-| 2  | Bob Smith     | Marketing  | 62000.00 | 2019-07-01 | TRUE       |
-| 3  | Charlie Davis | Sales      | 47000.00 | 2020-01-20 | FALSE      |
-| 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | TRUE       |
-| 5  | Ethan Brown   | IT         | 72000.00 | 2016-05-30 | TRUE       |
-| 6  | Fiona White   | IT         | 68000.00 | 2021-08-22 | FALSE      |
-| 7  | George Clark  | Marketing  | 58000.00 | 2020-10-12 | TRUE       |
-| 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | TRUE       |
+| 1  | Alice Johnson | Sales      | 55000.00 | 2018-03-15 | 1       |
+| 2  | Bob Smith     | Marketing  | 62000.00 | 2019-07-01 | 1       |
+| 3  | Charlie Davis | Sales      | 47000.00 | 2020-01-20 | 0      |
+| 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | 1       |
+| 5  | Ethan Brown   | IT         | 72000.00 | 2016-05-30 | 1       |
+| 6  | Fiona White   | IT         | 68000.00 | 2021-08-22 | 0      |
+| 7  | George Clark  | Marketing  | 58000.00 | 2020-10-12 | 1       |
+| 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | 1       |
 
 ---
 
@@ -68,14 +68,14 @@ CREATE TABLE employees (
 
      | id | name          | department | salary   | hire\_date | is\_active |
      | -- | ------------- | ---------- | -------- | ---------- | ---------- |
-     | 5  | Ethan Brown   | IT         | 72000.00 | 2016-05-30 | TRUE       |
-     | 6  | Fiona White   | IT         | 68000.00 | 2021-08-22 | FALSE      |
-     | 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | TRUE       |
-     | 2  | Bob Smith     | Marketing  | 62000.00 | 2019-07-01 | TRUE       |
-     | 7  | George Clark  | Marketing  | 58000.00 | 2020-10-12 | TRUE       |
-     | 1  | Alice Johnson | Sales      | 55000.00 | 2018-03-15 | TRUE       |
-     | 3  | Charlie Davis | Sales      | 47000.00 | 2020-01-20 | FALSE      |
-     | 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | TRUE       |
+     | 5  | Ethan Brown   | IT         | 72000.00 | 2016-05-30 | 1       |
+     | 6  | Fiona White   | IT         | 68000.00 | 2021-08-22 | 0      |
+     | 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | 1       |
+     | 2  | Bob Smith     | Marketing  | 62000.00 | 2019-07-01 | 1       |
+     | 7  | George Clark  | Marketing  | 58000.00 | 2020-10-12 | 1       |
+     | 1  | Alice Johnson | Sales      | 55000.00 | 2018-03-15 | 1       |
+     | 3  | Charlie Davis | Sales      | 47000.00 | 2020-01-20 | 0      |
+     | 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | 1       |
 
 4. Retrieve the `name` and `salary` columns for all employees, ordered by salary descending, but only show the first 5 rows. (Optional: use `LIMIT`)
 
@@ -85,14 +85,14 @@ CREATE TABLE employees (
 
      | id | name          | department | salary   | hire\_date | is\_active |
      | -- | ------------- | ---------- | -------- | ---------- | ---------- |
-     | 5  | Ethan Brown   | IT         | 72000.00 | 2016-05-30 | TRUE       |
-     | 6  | Fiona White   | IT         | 68000.00 | 2021-08-22 | FALSE      |
-     | 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | TRUE       |
-     | 2  | Bob Smith     | Marketing  | 62000.00 | 2019-07-01 | TRUE       |
-     | 7  | George Clark  | Marketing  | 58000.00 | 2020-10-12 | TRUE       |
-     | 1  | Alice Johnson | Sales      | 55000.00 | 2018-03-15 | TRUE       |
-     | 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | TRUE       |
-     | 3  | Charlie Davis | Sales      | 47000.00 | 2020-01-20 | FALSE      |
+     | 5  | Ethan Brown   | IT         | 72000.00 | 2016-05-30 | 1       |
+     | 6  | Fiona White   | IT         | 68000.00 | 2021-08-22 | 0      |
+     | 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | 1       |
+     | 2  | Bob Smith     | Marketing  | 62000.00 | 2019-07-01 | 1       |
+     | 7  | George Clark  | Marketing  | 58000.00 | 2020-10-12 | 1       |
+     | 1  | Alice Johnson | Sales      | 55000.00 | 2018-03-15 | 1       |
+     | 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | 1       |
+     | 3  | Charlie Davis | Sales      | 47000.00 | 2020-01-20 | 0      |
 
 ---
 

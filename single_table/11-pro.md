@@ -13,7 +13,7 @@ CREATE TABLE employees (
     department VARCHAR(50),
     salary DECIMAL(10,2),
     hire_date DATE,
-    is_active BOOLEAN
+    is_active BIT
 );
 ```
 
@@ -23,16 +23,16 @@ CREATE TABLE employees (
 
 | id | name    | department | salary   | hire\_date | is\_active |
 | -- | ------- | ---------- | -------- | ---------- | ---------- |
-| 1  | Alice   | Sales      | 55000.00 | 2018-05-21 | TRUE       |
-| 2  | Bob     | HR         | 48000.00 | 2019-08-15 | TRUE       |
-| 3  | Charlie | Sales      | 62000.00 | 2017-03-12 | FALSE      |
-| 4  | Diana   | IT         | 70000.00 | 2020-11-01 | TRUE       |
-| 5  | Evan    | HR         | 51000.00 | 2018-01-05 | FALSE      |
-| 6  | Fiona   | IT         | 72000.00 | 2019-04-23 | TRUE       |
-| 7  | George  | Sales      | 58000.00 | 2021-02-14 | TRUE       |
-| 8  | Hannah  | IT         | 68000.00 | 2016-09-30 | FALSE      |
-| 9  | Ian     | HR         | 53000.00 | 2020-07-19 | TRUE       |
-| 10 | Jane    | Sales      | 60000.00 | 2019-12-11 | TRUE       |
+| 1  | Alice   | Sales      | 55000.00 | 2018-05-21 | 1       |
+| 2  | Bob     | HR         | 48000.00 | 2019-08-15 | 1       |
+| 3  | Charlie | Sales      | 62000.00 | 2017-03-12 | 0      |
+| 4  | Diana   | IT         | 70000.00 | 2020-11-01 | 1       |
+| 5  | Evan    | HR         | 51000.00 | 2018-01-05 | 0      |
+| 6  | Fiona   | IT         | 72000.00 | 2019-04-23 | 1       |
+| 7  | George  | Sales      | 58000.00 | 2021-02-14 | 1       |
+| 8  | Hannah  | IT         | 68000.00 | 2016-09-30 | 0      |
+| 9  | Ian     | HR         | 53000.00 | 2020-07-19 | 1       |
+| 10 | Jane    | Sales      | 60000.00 | 2019-12-11 | 1       |
 
 ---
 
@@ -50,9 +50,9 @@ CREATE TABLE employees (
 
      | id | name    | department | salary   | hire\_date | is\_active |
      | -- | ------- | ---------- | -------- | ---------- | ---------- |
-     | 3  | Charlie | Sales      | 62000.00 | 2017-03-12 | FALSE      |
-     | 7  | George  | Sales      | 58000.00 | 2021-02-14 | TRUE       |
-     | 10 | Jane    | Sales      | 60000.00 | 2019-12-11 | TRUE       |
+     | 3  | Charlie | Sales      | 62000.00 | 2017-03-12 | 0      |
+     | 7  | George  | Sales      | 58000.00 | 2021-02-14 | 1       |
+     | 10 | Jane    | Sales      | 60000.00 | 2019-12-11 | 1       |
 
 2. List departments where total salary of active employees is over 150,000 and inactive employees count is less than 2.
 
@@ -154,8 +154,8 @@ CREATE TABLE employees (
 
       | id | name    | hire\_date | is\_active | salary   |
       | -- | ------- | ---------- | ---------- | -------- |
-      | 3  | Charlie | 2017-03-12 | FALSE      | 62000.00 |
-      | 8  | Hannah  | 2016-09-30 | FALSE      | 68000.00 |
+      | 3  | Charlie | 2017-03-12 | 0      | 62000.00 |
+      | 8  | Hannah  | 2016-09-30 | 0      | 68000.00 |
 
 12. Find departments with more than 3 employees hired after '2018-12-31'.
 
