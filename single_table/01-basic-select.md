@@ -50,7 +50,7 @@ CREATE TABLE employees (
        | 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | 1       |
 
 
-2. Retrieve all columns but limit the number of rows returned to 5. (Note: This introduces `LIMIT`, optional)
+2. Retrieve all columns but limit the number of rows returned to 5. (Note: This introduces `TOP`, optional)
 
     - Expected Output
 
