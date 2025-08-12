@@ -77,7 +77,7 @@ CREATE TABLE employees (
      | 3  | Charlie Davis | Sales      | 47000.00 | 2020-01-20 | 0      |
      | 8  | Hannah Lee    | Sales      | 54000.00 | 2019-02-14 | 1       |
 
-4. Retrieve the `name` and `salary` columns for all employees, ordered by salary descending, but only show the first 5 rows. (Optional: use `LIMIT`)
+4. Retrieve the `name` and `salary` columns for all employees, ordered by salary descending, but only show the first 5 rows. (Optional: use `TOP`)
 
 5. Retrieve all columns ordered by department ascending, then by salary descending within each department.
 

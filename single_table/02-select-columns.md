@@ -77,7 +77,7 @@ CREATE TABLE employees (
         | 8  | Hannah Lee    | 54000.00 |
 
 
-4. Retrieve the `name` and `salary` of all employees, but only show the first 5 rows. (Optional: combine with `LIMIT`)
+4. Retrieve the `name` and `salary` of all employees, but only show the first 5 rows. (Optional: combine with `TOP`)
 
 5. Retrieve the `department` and `hire_date` columns for all employees.
 
