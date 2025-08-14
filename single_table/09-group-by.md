@@ -82,10 +82,10 @@ CREATE TABLE employees (
 
      | department | avg\_salary |
      | ---------- | ----------- |
-     | Sales      | 53000.00    |
+     | Sales      | 52000.00    |
      | Marketing  | 60000.00    |
      | HR         | 51000.00    |
-     | IT         | 72000.00    |
+     | IT         | 68000.00    |
 
 ---
 
