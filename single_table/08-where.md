@@ -83,7 +83,7 @@ CREATE TABLE employees (
      | name        | salary   |
      | ----------- | -------- |
      | Ethan Brown | 72000.00 |
-     | Fiona White | 68000.00 |
+    
 
 6. Retrieve the names of employees in Marketing or HR departments.
 
