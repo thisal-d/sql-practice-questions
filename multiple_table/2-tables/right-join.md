@@ -110,7 +110,7 @@ WHERE c.customer_id IS NULL;
 
 ## 🔍 More Practice (Questions with Expected Output only)
 
-6. Show each payment with **customer name or 'Unknown'**, and indicate the **city** (use `'Unknown'` for NULLs).
+1. Show each payment with **customer name**, and indicate the **city**.
 
    * Expected Output:
 
@@ -121,14 +121,14 @@ WHERE c.customer_id IS NULL;
      | 203         | Dilshan        | Matara       | 950.00  |
      | 204         | Tharusha       | Negombo      | 2100.00 |
      | 205         | Lochana        | Kurunegala   | 3000.00 |
-     | 206         | Unknown        | Unknown      | 750.00  |
-     | 207         | Unknown        | Unknown      | 1200.00 |
+     | 206         | NULL           | NULL         | 750.00  |
+     | 207         | NULL           | NULL         | 1200.00 |
      | 208         | Nimesh         | Anuradhapura | 1450.00 |
 
 ---
 
-7. Count the number of payments for each customer, including **'Unknown'** for anonymous payments.
-
+7. Count the number of payments for each customer.
+   
    * Expected Output:
 
      | customer\_name | payment\_count |
@@ -139,11 +139,11 @@ WHERE c.customer_id IS NULL;
      | Tharusha       | 1              |
      | Lochana        | 1              |
      | Nimesh         | 1              |
-     | Unknown        | 2              |
+     | NULL           | 2              |
 
 ---
 
-8. Calculate the **total amount of payments per customer**, including anonymous.
+8. Calculate the **total amount of payments per customer**.
 
    * Expected Output:
 
@@ -155,12 +155,12 @@ WHERE c.customer_id IS NULL;
      | Tharusha       | 2100.00       |
      | Lochana        | 3000.00       |
      | Nimesh         | 1450.00       |
-     | Unknown        | 1950.00       |
+     | NULL           | 1950.00       |
 
 ---
 
-9. List all payments **over 2000** and include customer names (`Unknown` for NULLs).
-
+9. List all payments **over 2000** and include customer names.
+   
    * Expected Output:
 
      | payment\_id | customer\_name | amount  |
@@ -171,7 +171,7 @@ WHERE c.customer_id IS NULL;
 
 ---
 
-10. Display **average payment amount per customer**, showing 0 for those without payments.
+10.  Display **average payment amount per customer**, showing 0 for those without payments.
 
 * Expected Output:
 
@@ -183,11 +183,11 @@ WHERE c.customer_id IS NULL;
   | Tharusha       | 2100.00     |
   | Lochana        | 3000.00     |
   | Nimesh         | 1450.00     |
-  | Unknown        | 975.00      |
+  | NULL           | 975.00      |
 
 ---
 
-11. Show **payments made in July 2025**, including customer info (`Unknown` if missing).
+1.  Show **payments made in July 2025**, including customer info .
 
 * Expected Output:
 
@@ -198,13 +198,13 @@ WHERE c.customer_id IS NULL;
   | 203         | Dilshan        | 2025-07-20    | 950.00  |
   | 204         | Tharusha       | 2025-07-22    | 2100.00 |
   | 205         | Lochana        | 2025-07-23    | 3000.00 |
-  | 206         | Unknown        | 2025-07-24    | 750.00  |
-  | 207         | Unknown        | 2025-07-25    | 1200.00 |
+  | 206         | NULL           | 2025-07-24    | 750.00  |
+  | 207         | NULL           | 2025-07-25    | 1200.00 |
   | 208         | Nimesh         | 2025-07-29    | 1450.00 |
 
 ---
 
-12. Count how many payments each city received, including `'Unknown'`.
+1.  Count how many payments each city received.
 
 * Expected Output:
 
@@ -216,11 +216,11 @@ WHERE c.customer_id IS NULL;
   | Negombo      | 1              |
   | Kurunegala   | 1              |
   | Anuradhapura | 1              |
-  | Unknown      | 2              |
+  | NULL         | 2              |
 
 ---
 
-13. Show **total payments per city**, replacing `NULL` with `'Unknown'`.
+1.  Show **total payments per city**.
 
 * Expected Output:
 
@@ -232,11 +232,11 @@ WHERE c.customer_id IS NULL;
   | Negombo      | 2100.00       |
   | Kurunegala   | 3000.00       |
   | Anuradhapura | 1450.00       |
-  | Unknown      | 1950.00       |
+  | NULL         | 1950.00       |
 
 ---
 
-14. List **customers with exactly one payment**, include `Unknown`.
+14. List **customers with exactly one payment**, include `NULL`.
 
 * Expected Output:
 
@@ -246,11 +246,11 @@ WHERE c.customer_id IS NULL;
   | Tharusha       | 1              |
   | Lochana        | 1              |
   | Nimesh         | 1              |
-  | Unknown        | 2              |
+  | NULL           | 2              |
 
 ---
 
-15. Show all payments sorted by **amount descending**, include customer names (`Unknown` if NULL).
+1.  Show all payments sorted by **amount descending**, include NULL customer names.
 
 * Expected Output:
 
@@ -261,24 +261,24 @@ WHERE c.customer_id IS NULL;
   | 204         | Tharusha       | 2100.00 |
   | 202         | Asma           | 1800.00 |
   | 208         | Nimesh         | 1450.00 |
-  | 207         | Unknown        | 1200.00 |
-  | 206         | Unknown        | 750.00  |
+  | 207         | NULL           | 1200.00 |
+  | 206         | NULL           |  750.00 |
   | 203         | Dilshan        | 950.00  |
 
 ---
 
-16. Display payments and customer names, **mark customers as 'No Name' if NULL**, only for payments **less than 1000**.
+1.  Display payments and customer names, **including NULL**, only for payments **less than 1000**.
 
 * Expected Output:
 
   | payment\_id | customer\_name | amount |
   | ----------- | -------------- | ------ |
   | 203         | Dilshan        | 950.00 |
-  | 206         | No Name        | 750.00 |
+  | 206         | NULL           | 750.00 |
 
 ---
 
-17. Show **sum of payments grouped by customer**, including `'Unknown'` for anonymous.
+1.  Show **sum of payments grouped by customer**, including `NULL`.
 
 * Expected Output:
 
@@ -290,7 +290,7 @@ WHERE c.customer_id IS NULL;
   | Tharusha       | 2100.00       |
   | Lochana        | 3000.00       |
   | Nimesh         | 1450.00       |
-  | Unknown        | 1950.00       |
+  | NULL           | 1950.00       |
 
 ---
 
