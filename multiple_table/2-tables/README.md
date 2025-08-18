@@ -1,9 +1,3 @@
-Perfect ✅ let me rewrite the **full main README** for `multi-table/` with **only your 6 customers (Asma, Dilshan, Denuwan, Tharusha, Lochana, Nimesh)** and the updated payments data.
-
-Here’s the clean version:
-
----
-
 # Multi-Table Data Selection
 
 This section contains SQL practice questions that involve retrieving data from **two or more related tables**.
