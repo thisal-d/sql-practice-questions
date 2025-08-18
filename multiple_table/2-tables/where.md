@@ -131,19 +131,10 @@ This is the foundation of **joining tables**.
    | Nimesh      | 1450.00       |
    | Dilshan     | 950.00        |
 
----
-
-9. Find all customers who **have not made any payments**.
-
-   *Expected Output:*
-
-   | first\_name | city   |
-   | ----------- | ------ |
-   | Denuwan     | Jaffna |
 
 ---
 
-10. Show payments made **in July 2025 only**, with customer names.
+9. Show payments made **in July 2025 only**, with customer names.
 
 *Expected Output:*
 
@@ -158,7 +149,7 @@ This is the foundation of **joining tables**.
 
 ---
 
-11. Display customers who paid **less than 2000**.
+10. Display customers who paid **less than 2000**.
 
 *Expected Output:*
 
@@ -170,7 +161,7 @@ This is the foundation of **joining tables**.
 
 ---
 
-12. List the **customers and their first payment date**.
+11. List the **customers and their first payment date**.
 
 *Expected Output:*
 
@@ -184,7 +175,7 @@ This is the foundation of **joining tables**.
 
 ---
 
-13. Show the **city with the highest total payment**.
+12. Show the **city with the highest total payment**.
 
 *Expected Output:*
 
@@ -194,13 +185,23 @@ This is the foundation of **joining tables**.
 
 ---
 
-14. Find the **largest single payment overall** and the customer who made it.
+13. Find the **largest single payment overall** and the customer who made it.
 
 *Expected Output:*
 
 | first\_name | amount  |
 | ----------- | ------- |
 | Lochana     | 3000.00 |
+
+---
+
+14. Find all customers who **have not made any payments**.
+
+   *Expected Output:*
+
+   | first\_name | city   |
+   | ----------- | ------ |
+   | Denuwan     | Jaffna |
 
 ---
 
