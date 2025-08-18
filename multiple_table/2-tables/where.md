@@ -213,5 +213,5 @@ This is the foundation of **joining tables**.
 
 ---
 
-🚀 Next: [INNER JOIN](../inner-join/README.md)
+🚀 Next: [INNER JOIN](./inner-join.md)
 

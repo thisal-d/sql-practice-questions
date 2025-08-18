@@ -187,4 +187,4 @@ We continue with the same tables and sample data:
 
 ---
 
-🚀 Next: [LEFT JOIN](../left-join/README.md)
+🚀 Next: [LEFT JOIN](./left-join.md)

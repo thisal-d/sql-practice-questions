@@ -90,5 +90,5 @@ FROM customers c, payments p;
 
 ---
 
-🚀 Next: [WHERE with Multiple Tables](../where/README.md)
+🚀 Next: [WHERE with Multiple Tables](./where.md)
 

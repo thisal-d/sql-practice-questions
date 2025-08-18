@@ -99,7 +99,6 @@ Each concept has its own README with examples and practice questions:
 3. [INNER JOIN](./inner-join.md) – Matching rows in both tables
 4. [LEFT JOIN](./left-join.md) – All rows from left table, plus matches from right
 5. [RIGHT JOIN](./right-join.md) – All rows from right table, plus matches from left
-6. [JOIN with Aggregation](./join-aggregation.md) – Summarizing data across relationships
 
 ---
 

@@ -305,5 +305,5 @@ WHERE c.city IN ('Jaffna', 'Negombo');
 
 ---
 
-🚀 Next: [RIGHT JOIN](../right-join/README.md)
+🚀 Next: [RIGHT JOIN](./right-join.md)
 
