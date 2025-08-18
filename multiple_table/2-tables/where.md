@@ -149,7 +149,7 @@ This is the foundation of **joining tables**.
 
 ---
 
-10. Display customers who paid **less than 2000**.
+1.  Display customers with payments **less than 2000**.
 
 *Expected Output:*
 
