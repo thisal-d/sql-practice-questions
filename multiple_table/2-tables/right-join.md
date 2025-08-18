@@ -110,7 +110,7 @@ WHERE c.customer_id IS NULL;
 
 ## 🔍 More Practice (Questions with Expected Output only)
 
-1. Show each payment with **customer name**, and indicate the **city**.
+6. Show each payment with **customer name**, and indicate the **city**.
 
    * Expected Output:
 
@@ -179,7 +179,7 @@ WHERE c.customer_id IS NULL;
   | -------------- | ----------- |
   | Asma           | 2150.00     |
   | Dilshan        | 950.00      |
-  | Denuwan        | 0.00        |
+  | Denuwan        | NULL        |
   | Tharusha       | 2100.00     |
   | Lochana        | 3000.00     |
   | Nimesh         | 1450.00     |
@@ -187,7 +187,7 @@ WHERE c.customer_id IS NULL;
 
 ---
 
-1.  Show **payments made in July 2025**, including customer info .
+11.  Show **payments made in July 2025**, including customer info .
 
 * Expected Output:
 
@@ -204,7 +204,7 @@ WHERE c.customer_id IS NULL;
 
 ---
 
-1.  Count how many payments each city received.
+12.  Count how many payments each city received.
 
 * Expected Output:
 
@@ -220,7 +220,7 @@ WHERE c.customer_id IS NULL;
 
 ---
 
-1.  Show **total payments per city**.
+13.  Show **total payments per city**.
 
 * Expected Output:
 
@@ -250,7 +250,7 @@ WHERE c.customer_id IS NULL;
 
 ---
 
-1.  Show all payments sorted by **amount descending**, include NULL customer names.
+15.  Show all payments sorted by **amount descending**, include NULL customer names.
 
 * Expected Output:
 
@@ -267,7 +267,7 @@ WHERE c.customer_id IS NULL;
 
 ---
 
-1.  Display payments and customer names, **including NULL**, only for payments **less than 1000**.
+16.  Display payments and customer names, **including NULL**, only for payments **less than 1000**.
 
 * Expected Output:
 
@@ -278,7 +278,7 @@ WHERE c.customer_id IS NULL;
 
 ---
 
-1.  Show **sum of payments grouped by customer**, including `NULL`.
+17.  Show **sum of payments grouped by customer**, including `NULL`.
 
 * Expected Output:
 
