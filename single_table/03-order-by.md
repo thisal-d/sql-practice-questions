@@ -68,9 +68,9 @@ CREATE TABLE employees (
 
      | id | name          | department | salary   | hire\_date | is\_active |
      | -- | ------------- | ---------- | -------- | ---------- | ---------- |
+     | 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | 1       |
      | 5  | Ethan Brown   | IT         | 72000.00 | 2016-05-30 | 1       |
      | 6  | Fiona White   | IT         | 68000.00 | 2021-08-22 | 0      |
-     | 4  | Diana Garcia  | HR         | 51000.00 | 2017-11-10 | 1       |
      | 2  | Bob Smith     | Marketing  | 62000.00 | 2019-07-01 | 1       |
      | 7  | George Clark  | Marketing  | 58000.00 | 2020-10-12 | 1       |
      | 1  | Alice Johnson | Sales      | 55000.00 | 2018-03-15 | 1       |
