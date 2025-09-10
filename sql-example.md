@@ -1,4 +1,4 @@
-# 📘 SQL Reference Cheatshee
+# 📘 SQL Reference Cheatsheet
 
 **Based on lecture notes (Lectures 02 & 03) – with improved examples, explanations, and structure.**
 
@@ -20,11 +20,11 @@ It helps you **define tables**, **insert data**, **query and update information*
 
 ### 2.1. CREATE – Creating Tables
 
-**Syntax:**
+**Syntax (SQL Server):**
 
 ```sql
 CREATE TABLE table_name (
-    column_name datatype constraints,
+    column_name datatype [constraint],
     ...
 );
 ```
@@ -34,7 +34,7 @@ CREATE TABLE table_name (
 ```sql
 CREATE TABLE Employee (
     empId INT PRIMARY KEY,
-    empName VARCHAR(50) NOT NULL,
+    empName NVARCHAR(50) NOT NULL,
     dob DATE,
     salary DECIMAL(10,2) CHECK (salary > 0),
     deptId INT,
@@ -43,6 +43,7 @@ CREATE TABLE Employee (
         ON DELETE SET NULL
 );
 ```
+> Note: SQL Server supports `ON DELETE SET NULL` only if the foreign key column allows NULLs.
 
 **Explanation:**
 
@@ -74,10 +75,10 @@ ADD CONSTRAINT chk_salary CHECK (salary < 500000);
 ALTER TABLE Employee DROP COLUMN hireDate;
 ```
 
-**Rename a column (syntax varies by DBMS):**
+**Rename a column (SQL Server syntax):**
 
 ```sql
-ALTER TABLE Employee RENAME COLUMN empName TO name;
+EXEC sp_rename 'Employee.empName', 'name', 'COLUMN';
 ```
 
 ---
@@ -109,7 +110,7 @@ INSERT INTO Department(deptId, deptName)
 VALUES (2, 'Finance');
 ```
 
-**Insert multiple rows:**
+**Insert multiple rows (SQL Server 2008+):**
 
 ```sql
 INSERT INTO Department (deptId, deptName, location)
@@ -305,15 +306,15 @@ ORDER BY salary DESC;
 **Example:**
 
 ```sql
-SELECT COUNT(*), AVG(salary), MAX(salary)
+SELECT COUNT(*) AS Total, AVG(salary) AS AvgSalary, MAX(salary) AS MaxSalary
 FROM Employee;
 ```
 
 **Output:**
 
-| COUNT | AVG      | MAX      |
-|-------|----------|----------|
-| 5     | 82000.00 | 90000.00 |
+| Total | AvgSalary | MaxSalary |
+|-------|-----------|-----------|
+| 5     | 82000.00  | 90000.00  |
 
 ---
 
@@ -380,7 +381,7 @@ ON e.deptId = d.deptId;
 ```sql
 SELECT e.empName, d.deptName
 FROM Employee e
-LEFT JOIN Department d
+LEFT OUTER JOIN Department d
 ON e.deptId = d.deptId;
 ```
 
@@ -400,7 +401,7 @@ ON e.deptId = d.deptId;
 ```sql
 SELECT e.empName, d.deptName
 FROM Employee e
-RIGHT JOIN Department d
+RIGHT OUTER JOIN Department d
 ON e.deptId = d.deptId;
 ```
 
@@ -415,7 +416,7 @@ ON e.deptId = d.deptId;
 
 ---
 
-### 7.4. FULL OUTER JOIN – All Rows from Both Tables (if supported)
+### 7.4. FULL OUTER JOIN – All Rows from Both Tables
 
 ```sql
 SELECT e.empName, d.deptName
@@ -458,17 +459,17 @@ WHERE salary > 80000 AND deptId = 1;
 
 ---
 
-## 9. Comments
+## 9. Comments (SQL Server)
 
 - Single line: `-- This is a comment`
-- Multi-line (if supported): `/* This is a comment */`
+- Multi-line: `/* This is a comment */`
 
 ---
 
 ## 10. Extra Tips
 
 - Always end SQL statements with a semicolon (`;`).
-- Use `LIMIT` to restrict rows (e.g., `SELECT * FROM Employee LIMIT 5;`).
+- Use `TOP` to restrict rows (e.g., `SELECT TOP 5 * FROM Employee;`).
 - Test queries on sample data for best learning.
 
 ---
@@ -478,13 +479,13 @@ WHERE salary > 80000 AND deptId = 1;
 ```sql
 CREATE TABLE Department (
     deptId INT PRIMARY KEY,
-    deptName VARCHAR(50) NOT NULL,
-    location VARCHAR(30)
+    deptName NVARCHAR(50) NOT NULL,
+    location NVARCHAR(30)
 );
 
 CREATE TABLE Employee (
     empId INT PRIMARY KEY,
-    empName VARCHAR(50),
+    empName NVARCHAR(50),
     dob DATE,
     salary DECIMAL(10,2),
     deptId INT,
