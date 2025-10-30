@@ -17,3 +17,7 @@ Collection of SQL questions to improve your knowledge.
 ### Procedure
 1. [Single Table](./procedures/single_table/README.md)
 2. [Multiple Table](./procedures/multiple_table/README.md)
+
+### Functions
+1. [Without Table](./functions/without_table/README.md)
+2. [With Table](./functions/with_table/README.md)
